@@ -82,3 +82,5 @@ class Board:
                 if(self.mat[0][i] == player) and not(sortie):
                     sortie = self.path(player, 0, i, [])
         return sortie
+    
+    
