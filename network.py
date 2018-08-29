@@ -39,15 +39,15 @@ class Network:
         #    with open('filename.pkl', 'rb') as input:
         #    network = pickle.load(input)
 
-n = Network(10, 100, 81, 1)
-x = np.random.rand(81)
-print(n.feed(x))
-
-n.saveAs("oui")
-
-del n
-
-with open('oui.pkl', 'rb') as input:
-    n = pickle.load(input)
-    
-print(n.feed(x))
+#n = Network(10, 100, 81, 1)
+#x = np.random.rand(81)
+#print(n.feed(x))
+#
+#n.saveAs("oui")
+#
+#del n
+#
+#with open('oui.pkl', 'rb') as input:
+#    n = pickle.load(input)
+#    
+#print(n.feed(x))

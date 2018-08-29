@@ -1,4 +1,8 @@
 from board import Board
+from network import Network
+
+n = Network(10, 100, 81, 1)
+
 class Node:
 
     def __init__(self, board, player, parent):
@@ -38,12 +42,12 @@ class Tree:
         node = Node(Board(9), 1, 0)
         self.nodes = [node]
         
-    def selectNode(self):
+#    def selectNode(self):
         
         
     def expandNode(self, idNode):
         node = self.nodes[idNode]
-        if node.state == 0
+        if node.state == 0:
             moves = node.board.allowedMoves()
             for move in moves:
                 board = node.board.deepCopy()
